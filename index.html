@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+
+</head>
+<body>
+	<h1 class="popitki">попытки <span class="point">3</span></h1>
+	<button class="button">Спрятать</button>	
+		<div class="card1" style="background-image: url(медведь.jpg); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; top: 45%; left: 5%"></div>
+		<div class="card2" style="background-image: url(волк.jpg); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; left: 65%"></div>
+		<div class="card3" style="background-image: url(лошадь.jpg); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; left: 80%; top: 70%"></div>
+		<div class="col-4 card4" style="background-image: url(корова.jpg); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; left: 38%; top: 65%"></div>
+		<div class="col-4 card5" style="background-image: url(бурундук.jpg); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; left: 15%; top: 72%"></div>
+		<div class="col-4 card6" style="background-image: url(кот.jpg); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; left: 15%; top: 12%"></div>
+		<div class="col-4 card7" style="background-image: url(собака.jpg); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; left: 70%; top: 40% "></div>
+		<div class="col-4 card8" style="background-image: url(кролик.jpg); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; left: 42%; top: 6% "></div>
+		<div class="col-4 card9" style="background-image: url(утка.jpg); height: 200px; width: 300px; background-size: 100% 100%; position: absolute; left: 60%; top: 68% "></div>	
+	<div class="vopros" style="display: block">
+		<h2 style="position: absolute; left: 42%; top: 45%; display:none;" class="text">Где спрятана лошадь?</h2>
+	</div> 
+	
+<script>
+let popitki = 3;
+document.querySelector(".point").innerHTML = popitki
+document.querySelector(".button").onclick = function(){
+	document.querySelector(".text").style.display = "block";
+	document.querySelector(".card1").style.background = "black";
+	document.querySelector(".card2").style.background = "black";
+	document.querySelector(".card3").style.background = "black";
+	document.querySelector(".card4").style.background = "black";
+	document.querySelector(".card5").style.background = "black";
+	document.querySelector(".card6").style.background = "black";
+	document.querySelector(".card7").style.background = "black";
+	document.querySelector(".card8").style.background = "black";
+	document.querySelector(".card9").style.background = "black";
+}
+document.querySelector(".card3").onclick = function(){
+	alert("Верно! Молодец!")
+	document.querySelector(".text").style.display = "none";
+	document.querySelector(".card1").style.display = "none";
+	document.querySelector(".card2").style.display = "none";
+	document.querySelector(".card3").style.display = "none";
+	document.querySelector(".card4").style.display = "none";
+	document.querySelector(".card5").style.display = "none";
+	document.querySelector(".card6").style.display = "none";
+	document.querySelector(".card7").style.display = "none";
+	document.querySelector(".card8").style.display = "none";
+	document.querySelector(".card9").style.display = "none";
+	document.querySelector(".popitki").style.display = "none";
+	document.querySelector(".button").style.display = "none";
+}
+document.querySelector(".card1").onclick = function(){
+	popitki = popitki - 1;
+	document.querySelector(".point").innerHTML = popitki;
+	alert("Неправильно.")
+	if(popitki == 0){
+		alert("Ты проиграл.")
+		document.querySelector(".text").style.display = "none";
+	document.querySelector(".card1").style.display = "none";
+	document.querySelector(".card2").style.display = "none";
+	document.querySelector(".card3").style.display = "none";
+	document.querySelector(".card4").style.display = "none";
+	document.querySelector(".card5").style.display = "none";
+	document.querySelector(".card6").style.display = "none";
+	document.querySelector(".card7").style.display = "none";
+	document.querySelector(".card8").style.display = "none";
+	document.querySelector(".card9").style.display = "none";
+	document.querySelector(".popitki").style.display = "none";
+	document.querySelector(".button").style.display = "none";
+	}
+}
+document.querySelector(".card2").onclick = function(){
+	popitki = popitki - 1;
+	document.querySelector(".point").innerHTML = popitki;
+	alert("Неправильно.")
+	if(popitki == 0){
+		alert("Ты проиграл.")
+		document.querySelector(".text").style.display = "none";
+	document.querySelector(".card1").style.display = "none";
+	document.querySelector(".card2").style.display = "none";
+	document.querySelector(".card3").style.display = "none";
+	document.querySelector(".card4").style.display = "none";
+	document.querySelector(".card5").style.display = "none";
+	document.querySelector(".card6").style.display = "none";
+	document.querySelector(".card7").style.display = "none";
+	document.querySelector(".card8").style.display = "none";
+	document.querySelector(".card9").style.display = "none";
+	document.querySelector(".popitki").style.display = "none";
+	document.querySelector(".button").style.display = "none";
+	}
+}
+document.querySelector(".card4").onclick = function(){
+	popitki = popitki - 1;
+	document.querySelector(".point").innerHTML = popitki;
+	alert("Неправильно.")
+	if(popitki == 0){
+		alert("Ты проиграл.")
+		document.querySelector(".text").style.display = "none";
+	document.querySelector(".card1").style.display = "none";
+	document.querySelector(".card2").style.display = "none";
+	document.querySelector(".card3").style.display = "none";
+	document.querySelector(".card4").style.display = "none";
+	document.querySelector(".card5").style.display = "none";
+	document.querySelector(".card6").style.display = "none";
+	document.querySelector(".card7").style.display = "none";
+	document.querySelector(".card8").style.display = "none";
+	document.querySelector(".card9").style.display = "none";
+	document.querySelector(".popitki").style.display = "none";
+	document.querySelector(".button").style.display = "none";
+	}
+}
+document.querySelector(".card5").onclick = function(){
+	popitki = popitki - 1;
+	document.querySelector(".point").innerHTML = popitki;
+	alert("Неправильно.")
+	if(popitki == 0){
+		alert("Ты проиграл.")
+		document.querySelector(".text").style.display = "none";
+	document.querySelector(".card1").style.display = "none";
+	document.querySelector(".card2").style.display = "none";
+	document.querySelector(".card3").style.display = "none";
+	document.querySelector(".card4").style.display = "none";
+	document.querySelector(".card5").style.display = "none";
+	document.querySelector(".card6").style.display = "none";
+	document.querySelector(".card7").style.display = "none";
+	document.querySelector(".card8").style.display = "none";
+	document.querySelector(".card9").style.display = "none";
+	document.querySelector(".popitki").style.display = "none";
+	document.querySelector(".button").style.display = "none";
+	}
+}
+document.querySelector(".card6").onclick = function(){
+	popitki = popitki - 1;
+	document.querySelector(".point").innerHTML = popitki;
+	alert("Неправильно.")
+	if(popitki == 0){
+		alert("Ты проиграл.")
+		document.querySelector(".text").style.display = "none";
+	document.querySelector(".card1").style.display = "none";
+	document.querySelector(".card2").style.display = "none";
+	document.querySelector(".card3").style.display = "none";
+	document.querySelector(".card4").style.display = "none";
+	document.querySelector(".card5").style.display = "none";
+	document.querySelector(".card6").style.display = "none";
+	document.querySelector(".card7").style.display = "none";
+	document.querySelector(".card8").style.display = "none";
+	document.querySelector(".card9").style.display = "none";
+	document.querySelector(".popitki").style.display = "none";
+	document.querySelector(".button").style.display = "none";
+	}
+}
+document.querySelector(".card7").onclick = function(){
+	popitki = popitki - 1;
+	document.querySelector(".point").innerHTML = popitki;
+	alert("Неправильно.")
+	if(popitki == 0){
+		alert("Ты проиграл.")
+		document.querySelector(".text").style.display = "none";
+	document.querySelector(".card1").style.display = "none";
+	document.querySelector(".card2").style.display = "none";
+	document.querySelector(".card3").style.display = "none";
+	document.querySelector(".card4").style.display = "none";
+	document.querySelector(".card5").style.display = "none";
+	document.querySelector(".card6").style.display = "none";
+	document.querySelector(".card7").style.display = "none";
+	document.querySelector(".card8").style.display = "none";
+	document.querySelector(".card9").style.display = "none";
+	document.querySelector(".popitki").style.display = "none";
+	document.querySelector(".button").style.display = "none";
+	}
+}
+document.querySelector(".card8").onclick = function(){
+	popitki = popitki - 1;
+	document.querySelector(".point").innerHTML = popitki;
+	alert("Неправильно.")
+	if(popitki == 0){
+		alert("Ты проиграл.")
+		document.querySelector(".text").style.display = "none";
+	document.querySelector(".card1").style.display = "none";
+	document.querySelector(".card2").style.display = "none";
+	document.querySelector(".card3").style.display = "none";
+	document.querySelector(".card4").style.display = "none";
+	document.querySelector(".card5").style.display = "none";
+	document.querySelector(".card6").style.display = "none";
+	document.querySelector(".card7").style.display = "none";
+	document.querySelector(".card8").style.display = "none";
+	document.querySelector(".card9").style.display = "none";
+	document.querySelector(".popitki").style.display = "none";
+	document.querySelector(".button").style.display = "none";
+	}
+}
+document.querySelector(".card9").onclick = function(){
+	popitki = popitki - 1;
+	document.querySelector(".point").innerHTML = popitki;
+	alert("Неправильно.")
+	if(popitki == 0){
+		alert("Ты проиграл.")
+		document.querySelector(".text").style.display = "none";
+	document.querySelector(".card1").style.display = "none";
+	document.querySelector(".card2").style.display = "none";
+	document.querySelector(".card3").style.display = "none";
+	document.querySelector(".card4").style.display = "none";
+	document.querySelector(".card5").style.display = "none";
+	document.querySelector(".card6").style.display = "none";
+	document.querySelector(".card7").style.display = "none";
+	document.querySelector(".card8").style.display = "none";
+	document.querySelector(".card9").style.display = "none";
+	document.querySelector(".popitki").style.display = "none";
+	document.querySelector(".button").style.display = "none";
+	}
+}
+
+</script>	
+</body>
+</html>
